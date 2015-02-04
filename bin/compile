@@ -63,6 +63,7 @@ mkdir -p $APACHE_PATH/conf/{share,local,user}
 mkdir -p $PHP_PATH/{box,conf,logs}
 
 cp $BP_DIR/support/boot.sh .
+cp $BP_DIR/support/{mnt,s3fs} .
 
 if [[ -f $PROJECT_ROOT/composer.json ]]; then
     # Caching: pre-install
